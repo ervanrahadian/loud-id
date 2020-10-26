@@ -1,0 +1,46 @@
+.message {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.message > p {
+  background-color: rgb(160, 160, 160);
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: auto;
+}
+
+.message > small {
+  color: rgb(70, 70, 70);
+  position: absolute;
+  font-size: 12px;
+  top: -8px;
+  right: 5px;
+}
+
+.message_sender {
+  margin-left: auto;
+}
+
+.message_sender > .message_photo {
+  order: 1;
+}
+
+.message_sender > p {
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.message_sender > small {
+  left: 15px;
+}
+
+.message_photo {
+  order: 0;
+}
