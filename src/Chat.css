@@ -42,17 +42,21 @@
   padding-left: 20px;
   padding-right: 20px;
   height: 70px;
+  width: auto;
   border-top: 1px solid rgb(160, 160, 160);
   background-color: lightgrey;
 }
 
-.chat_input > form {
+.chat_text {
   flex: 1;
-  margin-right: 10px;
 }
 
-.chat_input > form > input {
-  width: 98%;
+.chat_mic {
+  margin-left: 40px;
+}
+
+.chat_text > form > input {
+  width: 100%;
   outline-width: 0;
   border: 1px solid lightgrey;
   border-radius: 20px;
@@ -60,6 +64,6 @@
   padding: 10px;
 }
 
-.chat_input > form > button {
+.chat_text > form > button {
   display: none;
 }

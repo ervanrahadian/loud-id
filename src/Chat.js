@@ -62,18 +62,22 @@ function Chat() {
         </FlipMove>
       </div>
       <div className="chat_input">
-        <form>
-          <input
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Ketik pesan dan tekan Enter"
-            type="text"
-          />
-          <button onClick={sendMessage}>Kirim</button>
-        </form>
-        <IconButton className="chat_mic">
-          <MicIcon />
-        </IconButton>
+        <div className="chat_text">
+          <form>
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Ketik pesan dan tekan Enter"
+              type="text"
+            />
+            <button onClick={sendMessage}>Kirim</button>
+          </form>
+        </div>
+        <div className="chat_mic">
+          <IconButton>
+            <MicIcon />
+          </IconButton>
+        </div>
       </div>
     </div>
   );
