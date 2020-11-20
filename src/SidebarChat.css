@@ -28,3 +28,10 @@
 .sidebarchat_info > h2 {
   font-size: 18px;
 }
+
+.sidebarchat_info > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 250px;
+}

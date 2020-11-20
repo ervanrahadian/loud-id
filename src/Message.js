@@ -14,13 +14,18 @@ const Message = forwardRef(
     const user = useSelector(selectUser);
 
     return (
-      <div
-        ref={ref}
-        className={`message ${user.email === email && "message_sender"}`}
-      >
-        <Avatar className="message_photo" src={photo} />
-        <p>{message}</p>
-        <small>{moment(new Date(timestamp?.toDate())).format("LT")}</small>
+      <div>
+        <div
+          ref={ref}
+          className={`message ${user.email === email && "message_sender"}`}
+        >
+          <Avatar className="message_photo" src={photo} />
+          <p>{message}</p>
+          <small className="message_date">
+            {moment(new Date(timestamp?.toDate())).format("LT")}
+          </small>
+          <small className="message_name">{displayName}</small>
+        </div>
       </div>
     );
   }

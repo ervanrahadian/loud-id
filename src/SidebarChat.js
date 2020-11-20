@@ -38,9 +38,11 @@ function SidebarChat({ id, chatName }) {
         <h2>{chatName}</h2>
         <p>{chatInfo[0]?.message}</p>
         <small>
-          {moment(new Date(chatInfo[0]?.timestamp?.toDate()))
-            .locale("id")
-            .fromNow()}
+          {chatInfo[0]?.timestamp?.toDate()
+            ? moment(new Date(chatInfo[0]?.timestamp?.toDate()))
+                .locale("id")
+                .fromNow()
+            : ""}
         </small>
       </div>
     </div>
